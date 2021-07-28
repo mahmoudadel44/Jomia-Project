@@ -23,8 +23,6 @@ body {
   background-color: #FFF;
   width: 100%;
   position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 .allContent .searchInputContainer {
   width: 43vw !important;
@@ -387,8 +385,6 @@ a:hover {
   background-color: #FFF;
   width: 100%;
   position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 .allContent .searchInputContainer {
   width: 43vw !important;
