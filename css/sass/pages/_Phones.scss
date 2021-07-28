@@ -9,13 +9,10 @@
   }
 }
 .allContent {
-    position: fixed;
-    top: 0;
+    position: sticky;
     z-index: 100;
   background-color: $whiteColor;
   width: 100%;
-  position: -webkit-sticky;
-
   .searchInputContainer {
     width: 43vw !important;
     .searchInput {

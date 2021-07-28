@@ -17,12 +17,10 @@ body {
 }
 
 .allContent {
-  position: fixed;
-  top: 0;
+  position: sticky;
   z-index: 100;
   background-color: #FFF;
   width: 100%;
-  position: -webkit-sticky;
 }
 .allContent .searchInputContainer {
   width: 43vw !important;
@@ -379,12 +377,10 @@ a:hover {
 }
 
 .allContent {
-  position: fixed;
-  top: 0;
+  position: sticky;
   z-index: 100;
   background-color: #FFF;
   width: 100%;
-  position: -webkit-sticky;
 }
 .allContent .searchInputContainer {
   width: 43vw !important;
