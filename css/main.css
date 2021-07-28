@@ -1,0 +1,771 @@
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.form-inline {
+  flex-flow: nowrap;
+}
+
+.myHeader {
+  background-color: #91193C;
+}
+.myHeader .artImg {
+  width: 1140px;
+}
+
+.allContent {
+  background-color: #FFF;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.allContent .searchInputContainer {
+  width: 43vw !important;
+}
+.allContent .searchInputContainer .searchInput {
+  border-left: none;
+}
+.allContent .searchInputContainer .searchInput {
+  background-color: #FFF;
+}
+.allContent .searchInputContainer .searchBtn {
+  background-color: #f68b1e !important;
+  color: #FFF;
+}
+.allContent .btn:focus,
+.allContent .searchInput:focus {
+  box-shadow: none !important;
+}
+.allContent .cart {
+  width: 100px;
+}
+@media (max-width: 992px) {
+  .allContent .cart {
+    margin-left: 12px;
+  }
+}
+.allContent .show:hover,
+.allContent .btn:hover,
+.allContent .cart:hover {
+  color: #f68b1e;
+}
+
+.categories {
+  padding: 4px 0 4px 15px;
+  border-radius: 5px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.categories .dropright .dropdown-toggle::after {
+  display: none !important;
+}
+.categories .btn:focus {
+  box-shadow: none !important;
+}
+.categories .dropdown-toggle {
+  padding: 0;
+}
+.categories .dropdown-toggle span {
+  font-size: 11px;
+  padding: 0;
+}
+
+.carousel-indicators {
+  bottom: -15px;
+}
+.carousel-indicators li {
+  background-color: #c7c7cd;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+.carousel-indicators .active {
+  background-color: #f68b1e;
+}
+
+.carousel-right-side img {
+  border-radius: 3px;
+  transition: transform 0.7s ease-in-out;
+}
+.carousel-right-side img:hover {
+  transform: rotate(360deg);
+}
+
+.settings {
+  background-color: #FFF;
+  border-radius: 5px;
+}
+.settings img {
+  transition: transform 0.7s ease-in-out;
+}
+.settings img:hover {
+  transform: rotate(360deg);
+}
+
+.topSelling .sellingRow {
+  background: #FFF;
+  border-radius: 6px;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+}
+.topSelling .selling {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topSelling .selling:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+  border-radius: 15;
+}
+.topSelling .selling p {
+  font-size: 14px;
+}
+.topSelling .selling .newSalary,
+.topSelling .selling title {
+  font-weight: bold;
+}
+.topSelling .selling .oldSalary {
+  color: #9c9c9c;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.needsRow {
+  background: #FFF;
+  border-radius: 6px;
+}
+.needsRow .need {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.needsRow .need:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.02);
+  border-radius: 15;
+}
+
+.show:hover {
+  width: 160px;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.seeAllDeals {
+  color: #FFF;
+}
+
+.discount {
+  background: #feefdf;
+  color: #f68b1f;
+  padding: 0 4px;
+  position: absolute;
+  top: 4px;
+  right: 6px;
+}
+
+.advirtesmentRow {
+  background-color: #FFF;
+}
+
+.advirtesmentRow:hover {
+  background-color: #f5f3f3;
+  transition: all 0.5s ease-in-out;
+  border-radius: 15;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.dealsTodayHead {
+  background-color: #FF0000;
+  color: #FFF;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.offersRow {
+  background-color: #FFF;
+  border-radius: 15;
+}
+
+.offersRow img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.03);
+  border-radius: 15;
+}
+
+.gaming,
+.jwelery {
+  background-color: #d4d2d4;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.gamingText,
+.JweleryText {
+  font-weight: bold;
+}
+
+.cleanerRow {
+  background-color: #FFF;
+  border-radius: 15;
+}
+
+.cleanerRow img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.03);
+  border-radius: 15;
+}
+
+.Information .container {
+  background: #FFF;
+}
+.Information .container p {
+  font-size: 0.75rem;
+}
+.Information .container a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.downloadApps {
+  background: #282828;
+}
+.downloadApps .first span {
+  color: #FFF;
+  font-size: 24px;
+}
+.downloadApps .first .fa-cart-plus {
+  color: #FFF;
+  font-size: 24px;
+}
+.downloadApps .subscribe h6 {
+  color: #FFF;
+  text-transform: uppercase;
+}
+.downloadApps .subscribe p {
+  color: #9ba2b0;
+  font-size: 12px;
+}
+.downloadApps .subscribe .input-group-text {
+  background: #FFF;
+}
+.downloadApps .subscribe .input-group-text .fa-envelope {
+  color: #c7c7cd;
+}
+.downloadApps .subscribe .form-control {
+  width: 291px;
+}
+.downloadApps .subscribe .form-control::placeholder {
+  font-size: 13px;
+}
+.downloadApps .subscribe .maleBtn,
+.downloadApps .subscribe .femaleBtn {
+  background: transparent;
+  border: none;
+  border: 1px solid #FFF;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+.downloadApps .downloads .downloadContents .cartContainer {
+  background: #f68b1e;
+  border-radius: 6px;
+  padding: 6px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.downloadApps .downloads .downloadContents .cartContainer .fa-cart-plus {
+  color: #fff;
+  font-size: 24px;
+}
+.downloadApps .downloads .downloadContents .downloadFree {
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 13px;
+}
+.downloadApps .downloads .downloadContents .getAccess {
+  color: #9ba2b0;
+  font-size: 12px;
+}
+
+.footerInfo {
+  background: #323232;
+}
+.footerInfo h6 {
+  color: #FFF;
+  font-size: 14px;
+}
+.footerInfo .firstList {
+  padding-left: 0;
+}
+.footerInfo ul {
+  list-style-type: none;
+}
+.footerInfo ul a {
+  color: #c7c7cd;
+  font-size: 12px;
+}
+.footerInfo ul a:hover {
+  text-decoration: underline;
+}
+.footerInfo .allList {
+  display: flex;
+}
+.footerInfo .allList .second {
+  margin-left: 50px;
+}
+@media (max-width: 992px) {
+  .footerInfo .firstList {
+    padding-left: 15px;
+  }
+}
+
+.contactUsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  width: 150px;
+}
+
+.contactUsContainer li a {
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+
+.contactUsContainer li a:hover {
+  color: #f68b1f;
+}
+
+.goToPhones {
+  position: absolute;
+}
+
+.form-inline {
+  flex-flow: nowrap;
+}
+
+.myHeader {
+  background-color: #91193C;
+}
+.myHeader .artImg {
+  width: 1140px;
+}
+
+.allContent {
+  background-color: #FFF;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.allContent .searchInputContainer {
+  width: 43vw !important;
+}
+.allContent .searchInputContainer .searchInput {
+  border-left: none;
+}
+.allContent .searchInputContainer .searchInput {
+  background-color: #FFF;
+}
+.allContent .searchInputContainer .searchBtn {
+  background-color: #f68b1e !important;
+  color: #FFF;
+}
+.allContent .btn:focus,
+.allContent .searchInput:focus {
+  box-shadow: none !important;
+}
+.allContent .cart {
+  width: 100px;
+}
+@media (max-width: 992px) {
+  .allContent .cart {
+    margin-left: 12px;
+  }
+}
+.allContent .show:hover,
+.allContent .btn:hover,
+.allContent .cart:hover {
+  color: #f68b1e;
+}
+
+.breadCrumb ol {
+  padding-left: 0 !important;
+}
+
+.breadCrumb li {
+  font-size: 0.75rem;
+}
+
+.phoneCategories {
+  height: 2000px;
+  padding: 4px 0 4px 15px;
+  border-radius: 5px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+}
+.phoneCategories .dropright .dropdown-toggle::after {
+  display: none !important;
+}
+.phoneCategories .btn:focus {
+  box-shadow: none !important;
+}
+.phoneCategories .dropdown-toggle {
+  padding: 0;
+}
+.phoneCategories .dropdown-toggle span {
+  font-size: 11px;
+  padding: 0;
+}
+
+.category,
+.androidPhones {
+  background: #fff;
+}
+
+.androidPhones {
+  margin-left: 90px;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+}
+
+.salaries {
+  margin-left: 76px;
+}
+
+@media (max-width: 992px) {
+  .androidPhones {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .otherOptions {
+    justify-content: center !important;
+  }
+
+  .productContent {
+    text-align: center;
+  }
+
+  .phoneNewSalary {
+    margin-left: 0px;
+  }
+
+  .officialStore,
+.mobileDiscount {
+    margin: auto;
+  }
+
+  .salaries {
+    display: flex;
+    align-self: center;
+    margin-left: 0px;
+  }
+
+  .phoneNewSalary {
+    margin-left: 0px !important;
+  }
+
+  .addToCart {
+    margin: 100px auto 15px;
+  }
+}
+.otherOptions {
+  justify-content: flex-start;
+}
+
+.separator {
+  border: 1px solid #eee;
+  width: 100%;
+}
+
+.form-check-input {
+  width: 17px;
+  height: 17px;
+}
+
+.fa-star {
+  color: #ccc;
+}
+
+.orangeStar {
+  color: #f68b1e;
+}
+
+.expressText {
+  color: #f68b1e;
+  margin-left: 13px;
+}
+
+.fa-exclamation-circle {
+  margin-left: 75px;
+  color: #ccc;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+  border-radius: 20px;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #000;
+  border-radius: 20px;
+}
+
+.mobileTypes {
+  width: 90%;
+  height: 155px;
+  overflow-y: auto;
+  border-bottom: 1px solid #eee;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+  transition: 0.5s all ease-in-out;
+}
+
+.androidPhones .sortedList {
+  justify-content: space-between;
+}
+.androidPhones .productNum {
+  color: #ccc;
+}
+.androidPhones .mobileInfo .officialStore {
+  background-color: #b60000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 4px;
+  width: 95px;
+  height: 30px;
+}
+.androidPhones .mobileTitle {
+  font-size: 14px;
+}
+.androidPhones .oldSalary {
+  color: #9c9c9c;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+.androidPhones .mobileDiscount {
+  background: #feefdf;
+  color: #f68b1f;
+  padding: 0 4px;
+  width: 46px;
+  height: 23px;
+  margin-left: 3px;
+}
+.androidPhones .form-check {
+  margin-left: -21px;
+}
+.androidPhones .numStars {
+  color: #9c9c9c;
+  font-size: 14px;
+}
+.androidPhones .addToCart {
+  background: #f68b1f;
+  color: #fff;
+  width: 205px;
+  margin-top: 100px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+}
+.androidPhones .expressText {
+  margin-left: 3px;
+}
+.androidPhones .eligable {
+  margin-left: 2px;
+}
+.androidPhones .phoneNewSalary {
+  margin-left: 105px;
+}
+
+.Information .container {
+  background: #FFF;
+}
+.Information .container p {
+  font-size: 0.75rem;
+}
+.Information .container a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.downloadApps {
+  background: #282828;
+}
+.downloadApps .first span {
+  color: #FFF;
+  font-size: 24px;
+}
+.downloadApps .first .fa-cart-plus {
+  color: #FFF;
+  font-size: 24px;
+}
+.downloadApps .subscribe h6 {
+  color: #FFF;
+  text-transform: uppercase;
+}
+.downloadApps .subscribe p {
+  color: #9ba2b0;
+  font-size: 12px;
+}
+.downloadApps .subscribe .input-group-text {
+  background: #FFF;
+}
+.downloadApps .subscribe .input-group-text .fa-envelope {
+  color: #c7c7cd;
+}
+.downloadApps .subscribe .form-control {
+  width: 291px;
+}
+.downloadApps .subscribe .form-control::placeholder {
+  font-size: 13px;
+}
+.downloadApps .subscribe .maleBtn,
+.downloadApps .subscribe .femaleBtn {
+  background: transparent;
+  border: none;
+  border: 1px solid #FFF;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+.downloadApps .downloads .downloadContents .cartContainer {
+  background: #f68b1e;
+  border-radius: 6px;
+  padding: 6px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.downloadApps .downloads .downloadContents .cartContainer .fa-cart-plus {
+  color: #fff;
+  font-size: 24px;
+}
+.downloadApps .downloads .downloadContents .downloadFree {
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 13px;
+}
+.downloadApps .downloads .downloadContents .getAccess {
+  color: #9ba2b0;
+  font-size: 12px;
+}
+
+.footerInfo {
+  background: #323232;
+}
+.footerInfo h6 {
+  color: #FFF;
+  font-size: 14px;
+}
+.footerInfo .firstList {
+  padding-left: 0;
+}
+.footerInfo ul {
+  list-style-type: none;
+}
+.footerInfo ul a {
+  color: #c7c7cd;
+  font-size: 12px;
+}
+.footerInfo ul a:hover {
+  text-decoration: underline;
+}
+.footerInfo .allList {
+  display: flex;
+}
+.footerInfo .allList .second {
+  margin-left: 50px;
+}
+@media (max-width: 992px) {
+  .footerInfo .firstList {
+    padding-left: 15px;
+  }
+}
+
+.contactUsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  width: 150px;
+}
+
+.contactUsContainer li a {
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+
+.contactUsContainer li a:hover {
+  color: #f68b1f;
+}
+
+/*# sourceMappingURL=main.css.map */

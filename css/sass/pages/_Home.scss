@@ -1,0 +1,381 @@
+body {
+  background-color: $bodyColor;
+  font-family: "Lato", sans-serif;
+  // height: 1000px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+//header section
+.form-inline {
+  flex-flow: nowrap;
+}
+.myHeader {
+  background-color: $headerColor;
+  .artImg {
+    width: 1140px;
+  }
+}
+.allContent {
+  background-color: $whiteColor;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  .searchInputContainer {
+    width: 43vw !important;
+    .searchInput {
+      border-left: none;
+    }
+    .searchInput {
+      background-color: $whiteColor;
+    }
+    .searchBtn {
+      background-color: $searchColor !important;
+      color: $whiteColor;
+    }
+  }
+  .btn:focus,
+  .searchInput:focus {
+    box-shadow: none !important;
+  }
+  .cart {
+    width: 100px;
+  }
+  @media (max-width: 992px) {
+    .cart {
+      margin-left: 12px;
+    }
+  }
+  .show:hover,
+  .btn:hover,
+  .cart:hover {
+    color: $searchColor;
+  }
+}
+
+//categories section
+.categories {
+  padding: 4px 0 4px 15px;
+  border-radius: 5px;
+  background-color: $whiteColor;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .dropright .dropdown-toggle::after {
+    display: none !important;
+  }
+  .btn:focus {
+    box-shadow: none !important;
+  }
+  .dropdown-toggle {
+    padding: 0;
+  }
+  .dropdown-toggle span {
+    font-size: 11px;
+    padding: 0;
+  }
+}
+.carousel-indicators {
+  bottom: -15px;
+  li {
+    background-color: #c7c7cd;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+  }
+  .active {
+    background-color: $searchColor;
+  }
+}
+.carousel-right-side img {
+  border-radius: 3px;
+  transition: transform 0.7s ease-in-out;
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
+.settings {
+  background-color: $whiteColor;
+  border-radius: 5px;
+  img {
+    transition: transform 0.7s ease-in-out;
+  }
+  img:hover {
+    transform: rotate(360deg);
+  }
+}
+
+//selling section
+
+.topSelling {
+  .sellingRow {
+    background: $whiteColor;
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+  }
+  .selling {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transition: all 0.5s ease-in-out;
+      transform: scale(1.05);
+      border-radius: 15;
+    }
+    p {
+      font-size: 14px;
+    }
+    .newSalary,
+    title {
+      font-weight: bold;
+    }
+    .oldSalary {
+      color: $greyColor;
+      text-decoration: line-through;
+      margin-bottom: 4px;
+    }
+  }
+}
+//needs  section
+.needsRow {
+  background: $whiteColor;
+  border-radius: 6px;
+  .need {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transition: all 0.5s ease-in-out;
+      transform: scale(1.02);
+      border-radius: 15;
+    }
+  }
+}
+.show:hover {
+  width: 160px;
+}
+//all links section
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.seeAllDeals {
+  color: $whiteColor;
+}
+//discount
+.discount {
+  background: #feefdf;
+  color: #f68b1f;
+  padding: 0 4px;
+  position: absolute;
+  top: 4px;
+  right: 6px;
+}
+
+//advirtesment  section
+
+.advirtesmentRow {
+  background-color: $whiteColor;
+}
+.advirtesmentRow:hover {
+  background-color: $grey2Color;
+  transition: all 0.5s ease-in-out;
+  border-radius: 15;
+  box-shadow: 0 0 12px 0 rgb(0 0 0 / 12%);
+}
+
+//deals today  section
+.dealsTodayHead {
+  background-color: $redColor;
+  color: $whiteColor;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+//offers section
+.offersRow {
+  background-color: $whiteColor;
+  border-radius: 15;
+}
+
+.offersRow img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.03);
+  border-radius: 15;
+}
+//gaming Section,jwelery section
+.gaming,
+.jwelery {
+  background-color: #d4d2d4;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+.gamingText,
+.JweleryText {
+  font-weight: bold;
+}
+
+//cleaners section
+.cleanerRow {
+  background-color: $whiteColor;
+  border-radius: 15;
+}
+
+.cleanerRow img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.03);
+  border-radius: 15;
+}
+
+//information section
+.Information .container {
+  background: $whiteColor;
+  p {
+    font-size: 0.75rem;
+  }
+  a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+// download apps
+.downloadApps {
+  background: #282828;
+  .first {
+    span {
+      color: $whiteColor;
+      font-size: 24px;
+    }
+    .fa-cart-plus {
+      color: $whiteColor;
+      font-size: 24px;
+    }
+  }
+  .subscribe {
+    h6 {
+      color: $whiteColor;
+      text-transform: uppercase;
+    }
+    p {
+      color: #9ba2b0;
+      font-size: 12px;
+    }
+    .input-group-text {
+      background: $whiteColor;
+      .fa-envelope {
+        color: #c7c7cd;
+      }
+    }
+    .form-control {
+      width: 291px;
+    }
+    .form-control::placeholder {
+      font-size: 13px;
+    }
+    .maleBtn,
+    .femaleBtn {
+      background: transparent;
+      border: none;
+      border: 1px solid $whiteColor;
+      color: $whiteColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 3px 10px;
+    }
+  }
+  .downloads {
+    .downloadContents {
+      .cartContainer {
+        background: $searchColor;
+        border-radius: 6px;
+        padding: 6px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-cart-plus {
+          color: #fff;
+          font-size: 24px;
+        }
+      }
+      .downloadFree {
+        text-transform: uppercase;
+        color: $whiteColor;
+        font-weight: bold;
+        font-size: 13px;
+      }
+      .getAccess {
+        color: #9ba2b0;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+//footer information
+
+.footerInfo {
+  background: #323232;
+  h6 {
+    color: $whiteColor;
+    font-size: 14px;
+  }
+  .firstList {
+    padding-left: 0;
+  }
+  ul {
+    list-style-type: none;
+    a {
+      color: #c7c7cd;
+      font-size: 12px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .allList {
+    display: flex;
+    .second {
+      margin-left: 50px;
+    }
+  }
+  @media (max-width: 992px) {
+    .firstList {
+      padding-left: 15px;
+    }
+  }
+}
+
+/////////////////////////////
+.contactUsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  width: 150px;
+}
+.contactUsContainer li a {
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+.contactUsContainer li a:hover {
+  color: #f68b1f;
+}
+.goToPhones {
+  position: absolute;
+}
